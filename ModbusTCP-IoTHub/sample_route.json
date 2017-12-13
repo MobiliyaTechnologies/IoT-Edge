@@ -1,0 +1,6 @@
+{
+  "routes": {
+    "modbusToFilter": "FROM /messages/modules/modbus/outputs/* INTO BrokeredEndpoint(\"/modules/formattermodule/inputs/input1\")",
+    "formatterToIoTHub": "FROM /messages/modules/formattermodule/outputs/output1 INTO $upstream"
+  }
+}

@@ -1,0 +1,10 @@
+D:\IoTEdge_V2\FormatterModule\FormatterModule\obj\Debug\netcoreapp2.0\FormatterModule.csproj.CoreCompileInputs.cache
+D:\IoTEdge_V2\FormatterModule\FormatterModule\obj\Debug\netcoreapp2.0\FormatterModule.AssemblyInfoInputs.cache
+D:\IoTEdge_V2\FormatterModule\FormatterModule\obj\Debug\netcoreapp2.0\FormatterModule.AssemblyInfo.cs
+d:\IoTEdge_V2\FormatterModule\FormatterModule\bin\Debug\netcoreapp2.0\FormatterModule.deps.json
+d:\IoTEdge_V2\FormatterModule\FormatterModule\bin\Debug\netcoreapp2.0\FormatterModule.runtimeconfig.json
+d:\IoTEdge_V2\FormatterModule\FormatterModule\bin\Debug\netcoreapp2.0\FormatterModule.runtimeconfig.dev.json
+D:\IoTEdge_V2\FormatterModule\FormatterModule\bin\Debug\netcoreapp2.0\FormatterModule.dll
+D:\IoTEdge_V2\FormatterModule\FormatterModule\bin\Debug\netcoreapp2.0\FormatterModule.pdb
+D:\IoTEdge_V2\FormatterModule\FormatterModule\obj\Debug\netcoreapp2.0\FormatterModule.dll
+D:\IoTEdge_V2\FormatterModule\FormatterModule\obj\Debug\netcoreapp2.0\FormatterModule.pdb
