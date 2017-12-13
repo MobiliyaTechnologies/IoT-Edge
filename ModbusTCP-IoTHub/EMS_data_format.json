@@ -1,0 +1,32 @@
+{
+  "DeviceData": [
+    {
+      "Device_Id": "HW1",
+      "AMPSAvg": "111.00",
+      "AMPS-L1": "11.00",
+      "AMPS-L2": "12.00",
+      "AMPS-L3": "13.00",
+      "Volts L1 to Neutral": "14.00",
+      "Volts L2 to Neutral": "15.00",
+      "Volts L3 to Neutral": "16.00",
+      "kW L1": "17.00",
+      "kW L2": "18.00",
+      "kW L3": "19.00",
+      "kW System": "20.00"
+    },
+    {
+      "Device_Id": "HW2",
+      "AMPSAvg": "222.00",
+      "AMPS-L1": "21.00",
+      "AMPS-L2": "22.00",
+      "AMPS-L3": "23.00",
+      "Volts L1 to Neutral": "24.00",
+      "Volts L2 to Neutral": "25.00",
+      "Volts L3 to Neutral": "26.00",
+      "kW L1": "27.00",
+      "kW L2": "28.00",
+      "kW L3": "29.00",
+      "kW System": "30.00"
+    }
+  ]
+}

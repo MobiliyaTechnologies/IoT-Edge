@@ -1,0 +1,90 @@
+{
+  "properties.desired": {
+    "Interval": "10000",
+    "SlaveConfigs": {
+      "Slave01": {
+        "SlaveConnection": "<IP Address of Edge Environment machine>",
+        "HwId": "5",
+        "Operations": {
+          "Op01": {
+            "PollingInterval": "10000",
+            "UnitId": "1",
+            "StartAddress": "44003",
+            "Count": "2",
+            "DisplayName": "kW System"
+          },
+          "Op02": {
+            "PollingInterval": "10000",
+            "UnitId": "2",
+            "StartAddress": "44016",
+            "Count": "2",
+            "DisplayName": "Amps System Avg"
+          },
+          "Op03": {
+            "PollingInterval": "10000",
+            "UnitId": "3",
+            "StartAddress": "44029",
+            "Count": "2",
+            "DisplayName": "kW L1"
+          },
+          "Op04": {
+            "PollingInterval": "10000",
+            "UnitId": "4",
+            "StartAddress": "44031",
+            "Count": "2",
+            "DisplayName": "kW L2"
+          },
+          "Op05": {
+            "PollingInterval": "10000",
+            "UnitId": "5",
+            "StartAddress": "44033",
+            "Count": "2",
+            "DisplayName": "kW L3"
+          },
+          "Op06": {
+            "PollingInterval": "10000",
+            "UnitId": "6",
+            "StartAddress": "44056",
+            "Count": "2",
+            "DisplayName": "Amps L1"
+          },
+          "Op07": {
+            "PollingInterval": "10000",
+            "UnitId": "7",
+            "StartAddress": "44058",
+            "Count": "2",
+            "DisplayName": "Amps L2"
+          },
+          "Op08": {
+            "PollingInterval": "10000",
+            "UnitId": "8",
+            "StartAddress": "44060",
+            "Count": "2",
+            "DisplayName": "Amps L3"
+          },
+          "Op09": {
+            "PollingInterval": "10000",
+            "UnitId": "9",
+            "StartAddress": "44062",
+            "Count": "2",
+            "DisplayName": "Volts L1 to Neutral"
+          },
+          "Op10": {
+            "PollingInterval": "10000",
+            "UnitId": "10",
+            "StartAddress": "44064",
+            "Count": "2",
+            "DisplayName": "Volts L2 to Neutral"
+          },
+          "Op11": {
+            "PollingInterval": "10000",
+            "UnitId": "11",
+            "StartAddress": "44066",
+            "Count": "2",
+            "DisplayName": "Volts L3 to Neutral"
+          }
+        }
+      }
+    }
+  }
+}
