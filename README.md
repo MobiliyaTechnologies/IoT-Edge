@@ -1,4 +1,4 @@
-# ARM Template for Energy Management Solution
+# ModbusTCP to Azure IoTHub
 
 ## Introduction
 
