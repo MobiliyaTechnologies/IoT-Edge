@@ -163,7 +163,13 @@ namespace FormatterModule
         static float GetFloatValue(List<Body> data, string parameter)
         {
             var hexValue = "";
-            data.Where(d => d.DisplayName.Equals(parameter)).ToList().ForEach(d => hexValue += int.Parse(d.Value).ToString("X"));
+            var dataList = data.Where(d => d.DisplayName.Equals(parameter)).ToList();
+            if (dataList.Count > 1)
+            {
+                dataList.Take(2).ToList().ForEach(d => hexValue += int.Parse(d.Value).ToString("X"));
+            }
+            if (hexValue == "" || string.IsNullOrEmpty(hexValue))
+                hexValue = "00000000";
             var byteValue = BitConverter.GetBytes(uint.Parse(hexValue, System.Globalization.NumberStyles.AllowHexSpecifier));
             return BitConverter.ToSingle(byteValue, 0);
         }
