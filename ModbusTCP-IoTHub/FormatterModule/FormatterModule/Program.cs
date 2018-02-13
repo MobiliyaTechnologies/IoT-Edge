@@ -115,6 +115,8 @@ namespace FormatterModule
             var data = JsonConvert.DeserializeObject<RequestModel>(messageString);
             var response = CreateResponse(data);
             messageString = JsonConvert.SerializeObject(response);
+            Console.WriteLine("Message to be Sent:");
+            Console.WriteLine(messageString);
             messageBytes = Encoding.ASCII.GetBytes(messageString);
 
 
@@ -162,16 +164,26 @@ namespace FormatterModule
 
         static float GetFloatValue(List<Body> data, string parameter)
         {
-            var hexValue = "";
-            var dataList = data.Where(d => d.DisplayName.Equals(parameter)).ToList();
-            if (dataList.Count > 1)
-            {
-                dataList.Take(2).ToList().ForEach(d => hexValue += int.Parse(d.Value).ToString("X"));
+            if(data == null || data.Count < 1){
+                return 0;
             }
-            if (hexValue == "" || string.IsNullOrEmpty(hexValue))
-                hexValue = "00000000";
-            var byteValue = BitConverter.GetBytes(uint.Parse(hexValue, System.Globalization.NumberStyles.AllowHexSpecifier));
-            return BitConverter.ToSingle(byteValue, 0);
+            // // For Dent PowerScout
+
+            var item = data.FirstOrDefault();
+            return (float.Parse(item.Value) / 10);
+
+            // // For Simulator
+
+            // var hexValue = "";
+            // var dataList = data.Where(d => d.DisplayName.Equals(parameter)).ToList();
+            // if (dataList.Count > 1)
+            // {
+            //     dataList.Take(2).ToList().ForEach(d => hexValue += int.Parse(d.Value).ToString("X"));
+            // }
+            // if (hexValue == "" || string.IsNullOrEmpty(hexValue))
+            //     hexValue = "00000000";
+            // var byteValue = BitConverter.GetBytes(uint.Parse(hexValue, System.Globalization.NumberStyles.AllowHexSpecifier));
+            // return BitConverter.ToSingle(byteValue, 0);
         }
 
 
