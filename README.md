@@ -24,6 +24,6 @@ The following prerequisites are requried to get the data up to the IoT hub from 
 
 ### Installing
 
-Please refer to the deployment document in the Github repo.
+Please refer to the deployment document [ModbusTCP-IoTHub/Modbus-IoTEdge.docx] in the Github repo.
 
 
